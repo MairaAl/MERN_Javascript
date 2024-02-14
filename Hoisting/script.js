@@ -35,3 +35,38 @@ var mean = function () {
 };
 console.log(food);
 //EJEMPLO 6
+console.log(genre);
+var genre = "disco";
+rewind();
+function rewind() {
+  genre = "rock";
+  console.log(genre);
+  var genre = "r&b";
+  console.log(genre);
+}
+console.log(genre);
+//EJEMPLO 7
+dojo = "san jose";
+console.log(dojo);
+learn();
+function learn() {
+  dojo = "seattle";
+  console.log(dojo);
+  var dojo = "burbank";
+  console.log(dojo);
+}
+console.log(dojo);
+//EJEMPLO 8
+console.log(makeDojo("Chicago", 65));
+console.log(makeDojo("Berkeley", 0));
+function makeDojo(name, students) {
+  const dojo = {};
+  dojo.name = name;
+  dojo.students = students;
+  if (dojo.students > 50) {
+    dojo.hiring = true;
+  } else if (dojo.students <= 0) {
+    dojo = "closed for now";
+  }
+  return dojo;
+}
