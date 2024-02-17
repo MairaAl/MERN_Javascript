@@ -18,3 +18,14 @@ class Ninja {
     this.salud += 10;
   }
 }
+class Sensei extends Ninja {
+  constructor(nombre) {
+    super(nombre, (fuerza = 10), (velocidad = 10), (salud = 200));
+  }
+  speakWisdom() {
+    console.log("Hey ninjas");
+  }
+  drinkSake() {
+    this.salud += 20;
+  }
+}
